@@ -1,0 +1,411 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: #004a8f;
+  color: whitesmoke;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+/* Conteneur principal (menu + contenu) */
+.container2 {
+  flex: 1;
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+/* Menu */
+.menu {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #dbe9fb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+}
+
+.menu a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  min-height: 50px;
+  line-height: 1.2;
+  border-radius: 12px;
+  font-weight: 700;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #005bb5;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+  max-width: 800px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.main h2 {
+  font-size: 1.8rem;
+  color: #004a8f;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.main p {
+  margin-bottom: 1.3rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #004a8f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #a8d0ff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .menu {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem 0.5rem;
+    min-width: auto;
+    gap: 0.5rem;
+  }
+
+  .menu a {
+    flex: 1 0 auto;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+
+  .main {
+    max-width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #004a8f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#myfooterJS {
+   font-size: 36px;
+   text-align: center;
+   margin-top: 50px;
+   text-transform: uppercase ;
+   letter-spacing: 2px;
+}
+#myfooterJS:hover {
+   color: green;
+}
+
+.buttonpassion{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 5px solid black;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.containerceremony {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #004a8f;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+img#monImage1 {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.buttonpassion {
+  background-color: #004a8f;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttonpassion:hover {
+  background-color: #006fd6;
+  transform: scale(1.05);
+}
+
+a img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.2s;
+}
+
+a img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+.classement-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.classement-container h2 {
+  text-align: center;
+  color: #004a8f;
+  margin-bottom: 1rem;
+}
+
+.classement-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.classement-table th,
+.classement-table td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+}
+
+.classement-table thead {
+  background-color: #004a8f;
+  color: white;
+}
+
+.classement-table tbody tr:nth-child(even) {
+  background-color: #f5faff;
+}
+
+.classement-table tbody tr:hover {
+  background-color: #dceeff;
+}
+.highlight {
+  background-color: orange; /* vert fluo */
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 0 10px orange;
+}
+
+
+
+
+
+
+#button-myfooter{
+   display: block; 
+   margin: 30px auto;
+   border: black;
+   cursor: pointer;
+   background-color: lightseagreen;
+   color: black;
+   border: 5px solid black;
+   padding: 15px 40px;
+   text-align: center;
+   font-size: 22px;
+   font-weight: bold;
+   font-family: 'Times New Roman';
+}
+#button-myfooter:hover {
+   background-color: blue;
+}
+
+
+
+.intro-cv {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+
+
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  padding: 0.7rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #004a8f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0073e6;
+}
+
+.form-intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+#MyfooterJS2 {
+  text-align: center;         /* centre le texte horizontalement */
+  font-size: 35px;            /* taille du texte */
+  color: black;               /* couleur du texte */
+  background-color: transparent;     /* fond bleu */
+  padding: 10px 20px;         /* un peu d’espace autour du texte */
+  border-radius: 8px;         /* coins arrondis */
+  margin: 20px auto;          /* marge en haut et bas, centré horizontalement */
+  width: fit-content;         /* largeur adaptée au contenu */
+  font-weight: bold;          /* texte en gras */
+}
